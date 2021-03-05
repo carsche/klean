@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lerna": "lerna",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/carsche/klean/issues"
   },
-  "homepage": "https://github.com/carsche/klean#readme"
+  "homepage": "https://github.com/carsche/klean#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
