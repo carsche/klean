@@ -1,7 +1,7 @@
 import React from "react";
 
-const Base = () => (
-  <h1>Base fragment</h1>
+const Base = (title: string) => (
+  <h1>{title}</h1>
 );
 
 export default Base;
