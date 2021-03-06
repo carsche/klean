@@ -21,6 +21,7 @@
     "url": "git+https://github.com/carsche/klean.git"
   },
   "scripts": {
+    "build": "webpack --config webpack.config.ts",     
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
