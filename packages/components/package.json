@@ -1,6 +1,6 @@
 {
   "name": "@klean/components",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "> TODO: description",
   "author": "Carl Johan Schedvin <carl.johan.schedvin@softhouse.se>",
   "homepage": "https://github.com/carsche/klean/tree/main/packages/components#readme",
@@ -21,8 +21,8 @@
     "url": "git+https://github.com/carsche/klean.git"
   },
   "scripts": {
-    "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",   
-    "prepare": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",     
+    "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",
+    "prepare": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
