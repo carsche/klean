@@ -7,11 +7,11 @@
   "license": "MIT",
   "main": "lib/components.js",
   "directories": {
-    "lib": "lib",
+    "dist": "dist",
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -21,7 +21,8 @@
     "url": "git+https://github.com/carsche/klean.git"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.ts",     
+    "build": "cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",   
+    "prepare": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",     
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
