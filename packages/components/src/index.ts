@@ -1,5 +1,1 @@
-import Base from "./Base"
-
-export default {
-  Base
-}
+export {default as Base} from "./Base";

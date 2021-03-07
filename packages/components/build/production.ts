@@ -3,7 +3,7 @@ import webpack from "webpack";
 
 const configuration: webpack.Configuration = {
   mode: "production",
-  devtool: "cheap-module-source-map",
+  devtool: "source-map",
   entry: "./src/index.ts",
   output: {
       path: path.resolve(__dirname, "../dist"),
