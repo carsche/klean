@@ -1,2 +1,6 @@
 !dist/
+.babelrc
+webpack.config.ts
+tsconfig.json
+tsconfig.webpack.json
 build/
