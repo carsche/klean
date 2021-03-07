@@ -5,7 +5,7 @@
   "author": "Carl Johan Schedvin <carl.johan.schedvin@softhouse.se>",
   "homepage": "https://github.com/carsche/klean/tree/main/packages/components#readme",
   "license": "MIT",
-  "main": "lib/components.js",
+  "main": "dist/klean.components.js",
   "directories": {
     "dist": "dist",
     "test": "__tests__"
