@@ -3,21 +3,37 @@ import webpack from "webpack";
 
 const configuration: webpack.Configuration = {
   devtool: "cheap-module-source-map",
-  entry: './src/index',
+  entry: "./src/index",
   output: {
-      path: path.resolve(__dirname, '../dist'),
-      filename: 'klean.components.js'
+      path: path.resolve(__dirname, "../dist"),
+      filename: "klean.components.js",
+      libraryTarget: "commonjs2"
   },
   resolve: {
-      extensions: ['.ts', '.tsx', '.js', '.json']
+      extensions: [".ts", ".tsx", ".js", ".json"]
   },
   module: {
       rules: [{
           // Include ts, tsx, js, and jsx files.
           test: /\.(ts|js)x?$/,
           exclude: /node_modules/,
-          loader: 'babel-loader',
+          loader: "babel-loader",
       }],
+  },
+  externals: {
+    // Don't bundle react or react-dom      
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "React",
+      root: "React"
+    },
+    "react-dom": {
+      commonjs: "react-dom",
+      commonjs2: "react-dom",
+      amd: "ReactDOM",
+      root: "ReactDOM"
+    }
   }
 };
 
