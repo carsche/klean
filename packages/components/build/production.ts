@@ -1,8 +1,6 @@
 import path from "path";
 import webpack from "webpack";
 
-const pkg = require('../package.json');
-
 const configuration: webpack.Configuration = {
   mode: "production",
   devtool: "source-map",
@@ -10,7 +8,7 @@ const configuration: webpack.Configuration = {
   output: {
       path: path.resolve(__dirname, "../dist"),
       filename: "klean.components.js",
-      library: pkg.name,
+      library: "",
       libraryTarget: "commonjs"
   },
   resolve: {
