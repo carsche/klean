@@ -21,8 +21,8 @@
     "url": "git+https://github.com/carsche/klean.git"
   },
   "scripts": {
-    "build": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",
-    "prepare": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack",
+    "build": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack --mode production --display-modules",
+    "prepare": "rm -Rf dist && cross-env TS_NODE_PROJECT=\"tsconfig.webpack.json\" webpack --mode production --display-modules",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
