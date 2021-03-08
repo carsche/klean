@@ -4,12 +4,11 @@ import webpack from "webpack";
 const configuration: webpack.Configuration = {
   mode: "production",
   devtool: "source-map",
-  entry: "./src/index.ts",
+  entry: "../src/index.ts",
   output: {
       path: path.resolve(__dirname, "../dist"),
       filename: "klean.components.js",
-      library: "",
-      libraryTarget: "commonjs"
+      libraryTarget: "commonjs2"
   },
   resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"]
