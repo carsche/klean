@@ -10,6 +10,7 @@ const configuration: webpack.Configuration = {
       filename: "klean.components.js",
       libraryTarget: "commonjs2"
   },
+  stats: "verbose",
   resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"]
   },
