@@ -8,7 +8,7 @@ const configuration: webpack.Configuration = {
   output: {
       path: path.resolve(__dirname, "../dist"),
       filename: "klean.components.js",
-      libraryTarget: "commonjs2"
+      libraryTarget: "commonjs"
   },
   resolve: {
       extensions: [".ts", ".tsx", ".js", ".json"]
